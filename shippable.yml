@@ -1,0 +1,19 @@
+language: python
+
+python:
+  - 2.7 #2.7.12
+  - 3.4 #3.4.5
+  - 3.5 #3.5.2
+  - 3.6 #3.6.4
+  - pypy2 #5.10.0
+  - pypy3 #5.10.1
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u16pytall
+    image_tag: v6.1.4
+    pull: true
+    
+  ci:
+    - python --version
+    
