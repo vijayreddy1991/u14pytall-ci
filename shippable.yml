@@ -5,7 +5,7 @@ python:
   - 3.4 #3.4.5
   - 3.5 #3.5.2
   - 3.6 #3.6.4
-  - pypy2 #5.10.0
+  - pypy #5.10.0
   - pypy3 #5.10.1
 
 build:
@@ -16,4 +16,4 @@ build:
     
   ci:
     - python --version
-    
+ 
