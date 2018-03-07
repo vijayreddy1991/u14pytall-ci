@@ -9,10 +9,6 @@ python:
   - pypy3 #5.10.1
 
 build:
-  pre_ci_boot:
-    image_name: drydock/u16pytall
-    image_tag: v6.2.4
-    pull: true
     
   ci:
     - python --version 
