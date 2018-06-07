@@ -18,7 +18,7 @@ python:
   
 build:
   pre_ci_boot:
-    image_name: vijaydocker1991/pythontesting
+    image_name: drydock/u14pytall
     image_tag: master
     pull: true
     
