@@ -23,7 +23,7 @@ build:
     
   ci:
     - python --version 
-    #- pip --version #8.1.2
+    - pip --version 
     - virtualenv --version 
     #- docker pull shippabledocker/sample_node_pvt:ecr
     
