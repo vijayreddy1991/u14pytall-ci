@@ -17,7 +17,7 @@ python:
   
 build:
   pre_ci_boot:
-    image_name: drydock/u14all
+    image_name: drydock/u14pytall
     image_tag: master
     pull: true
     
