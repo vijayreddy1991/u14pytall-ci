@@ -16,16 +16,20 @@ python:
   - pypy3 #5.10.1
   
 build:
+  pre_ci_boot:
+    image_name: drydock/u14all
+    image_tag: master
+    pull: true
     
   ci:
     - python --version 
     #- pip --version #8.1.2
-    #- virtualenv --version #15.1.0
-    - docker pull shippabledocker/sample_node_pvt:ecr
+    - virtualenv --version 
+    #- docker pull shippabledocker/sample_node_pvt:ecr
     
-integrations:
+#integrations:
     
-  hub:
+  #hub:
  #Docker integration
-    - integrationName: ship-docker
-      type: dockerRegistryLogin
+   # - integrationName: ship-docker
+     # type: dockerRegistryLogin
