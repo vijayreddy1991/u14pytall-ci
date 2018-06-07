@@ -1,10 +1,17 @@
 language: python
 
 python:
+  - 2.3 #2.3.7
+  - 2.4 #2.4.6
+  - 2.5 #2.5.6
+  - 2.6 #2.6.9
   - 2.7 #2.7.12
+  - 3.1 #3.1.5
+  - 3.2 #3.2.6
   - 3.4 #3.4.8
   - 3.5 #3.5.2
   - 3.6 #3.6.5
+  - 3.7 #3.7.0
   - pypy #5.10.0
   - pypy3 #5.10.1
 
@@ -16,6 +23,8 @@ build:
     
   ci:
     - python --version 
+    - pip --version #8.1.2
+    - virtualenv --version #15.1.0
     - docker pull shippabledocker/sample_node_pvt:ecr
     
 integrations:
