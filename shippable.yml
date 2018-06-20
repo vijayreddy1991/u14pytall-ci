@@ -2,12 +2,10 @@ language: python
 
 python:
   - 2.7 #2.7.12
-  - 3.4 #3.4.8
-  - 3.5 #3.5.2
   - 3.6 #3.6.5
-  - 3.7 #3.7.0
   - pypy #5.10.0
   - pypy3 #5.10.1
+  
   
 build:
   pre_ci_boot:
